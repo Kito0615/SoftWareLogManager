@@ -14,6 +14,7 @@
 		8AFE09AC1C119D0400D53493 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AFE09AA1C119D0400D53493 /* Main.storyboard */; };
 		8AFE09B71C119D0500D53493 /* UpdateLogManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE09B61C119D0500D53493 /* UpdateLogManagerTests.m */; };
 		8AFE09C21C119D0500D53493 /* UpdateLogManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE09C11C119D0500D53493 /* UpdateLogManagerUITests.m */; };
+		8AFE09D11C119D1D00D53493 /* LogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AFE09D01C119D1D00D53493 /* LogManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		8AFE09BD1C119D0500D53493 /* UpdateLogManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UpdateLogManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AFE09C11C119D0500D53493 /* UpdateLogManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateLogManagerUITests.m; sourceTree = "<group>"; };
 		8AFE09C31C119D0500D53493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8AFE09CF1C119D1D00D53493 /* LogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogManager.h; sourceTree = "<group>"; };
+		8AFE09D01C119D1D00D53493 /* LogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 		8AFE099E1C119D0400D53493 /* UpdateLogManager */ = {
 			isa = PBXGroup;
 			children = (
+				8AFE09CF1C119D1D00D53493 /* LogManager.h */,
+				8AFE09D01C119D1D00D53493 /* LogManager.m */,
 				8AFE099F1C119D0400D53493 /* AppDelegate.h */,
 				8AFE09A01C119D0400D53493 /* AppDelegate.m */,
 				8AFE09A51C119D0400D53493 /* ViewController.h */,
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AFE09D11C119D1D00D53493 /* LogManager.m in Sources */,
 				8AFE09A71C119D0400D53493 /* ViewController.m in Sources */,
 				8AFE09A41C119D0400D53493 /* main.m in Sources */,
 				8AFE09A11C119D0400D53493 /* AppDelegate.m in Sources */,
@@ -401,6 +407,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UpdateLogManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.digiarty.UpdateLogManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,6 +420,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = UpdateLogManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_BUNDLE_IDENTIFIER = com.digiarty.UpdateLogManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -489,6 +497,7 @@
 				8AFE09C81C119D0500D53493 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8AFE09C91C119D0500D53493 /* Build configuration list for PBXNativeTarget "UpdateLogManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +506,7 @@
 				8AFE09CB1C119D0500D53493 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8AFE09CC1C119D0500D53493 /* Build configuration list for PBXNativeTarget "UpdateLogManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +515,7 @@
 				8AFE09CE1C119D0500D53493 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

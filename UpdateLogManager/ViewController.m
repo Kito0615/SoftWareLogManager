@@ -12,6 +12,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 
     // Do any additional setup after loading the view.
 }
@@ -21,5 +22,29 @@
 
     // Update the view, if already loaded.
 }
+- (IBAction)showPanel:(NSButton *)sender {
+    DisplayLogViewer();
+}
+- (IBAction)writeDateLog:(NSButton *)sender {
+    
+    FLog(@"abcde");
+}
 
+- (IBAction)writeLog:(NSButton *)sender {
+    
+    FPrint(@"abcd");
+    
+}
+
+- (IBAction)setupLogDir:(NSButton *)sender {
+    
+    NSOpenPanel * openPanel = [NSOpenPanel openPanel];
+    openPanel.canChooseFiles = NO;
+    openPanel.canChooseDirectories = YES;
+    openPanel.directoryURL = [NSURL URLWithString:NSHomeDirectory()];
+    openPanel.allowsMultipleSelection = NO;
+    if ([openPanel runModal]) {
+        SetLogsDirectory([[[openPanel URLs] objectAtIndex:0] path]);
+    }
+}
 @end

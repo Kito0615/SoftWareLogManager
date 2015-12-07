@@ -7,9 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "LogManager.h"
 
 @interface ViewController : NSViewController
-
 
 @end
 
